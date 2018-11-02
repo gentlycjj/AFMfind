@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Atomforce - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Apple\AppData\Local\Temp\RSP83FA.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Atomforce.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\studing\AFM驱动方案\- 副本2-源程序PCI8620_像素200-400_XY清零_20170415修正\Atomforce.cpp"
+]
+Creating command line "cl.exe @C:\Users\Apple\AppData\Local\Temp\RSP83FA.tmp" 
+Creating temporary file "C:\Users\Apple\AppData\Local\Temp\RSP83FB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Atomforce.pdb" /debug /machine:I386 /out:"Debug/Atomforce.exe" /pdbtype:sept 
+".\Debug\Atomforce.obj"
+]
+Creating command line "link.exe @C:\Users\Apple\AppData\Local\Temp\RSP83FB.tmp"
+<h3>Output Window</h3>
+Compiling...
+Atomforce.cpp
+======== Welcome to use our art company's products!
+======== Automatically linking with PCI8620_32.dll...
+======== Successfully linked with PCI8620_32.dll
+Linking...
+Atomforce.obj : error LNK2001: unresolved external symbol "public: void __thiscall CMicroscopeDoc::ReplaceFlag(int)" (?ReplaceFlag@CMicroscopeDoc@@QAEXH@Z)
+Atomforce.obj : error LNK2001: unresolved external symbol "public: void __thiscall CMicroscopeDoc::InitDIBData(void)" (?InitDIBData@CMicroscopeDoc@@QAEXXZ)
+Atomforce.obj : error LNK2001: unresolved external symbol "public: void __thiscall CMicroscopeDoc::ReplaceHDIB(struct HDIB__ *)" (?ReplaceHDIB@CMicroscopeDoc@@QAEXPAUHDIB__@@@Z)
+Atomforce.obj : error LNK2001: unresolved external symbol "unsigned short __stdcall PaletteSize(char *)" (?PaletteSize@@YGGPAD@Z)
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_ReleaseDeviceProAD@4
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_ReadRegisterULong@12
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_InitDeviceProAD@8
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_WriteRegisterULong@16
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_GetDeviceAddr@16
+Atomforce.obj : error LNK2001: unresolved external symbol __imp__PCI2003_CreateDevice@4
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __endthreadex
+nafxcwd.lib(thrdcore.obj) : error LNK2001: unresolved external symbol __beginthreadex
+libcd.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/Atomforce.exe : fatal error LNK1120: 13 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Atomforce.exe - 14 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

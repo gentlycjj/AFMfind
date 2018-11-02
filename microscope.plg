@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: microscope - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPA491.tmp" with contents
+[
+/nologo /MT /W3 /GX /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/microscope.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\新仪器AFM调试_USB-AD&DA采集卡\1AFM源程序_USB_1倍像素100-400_3.3V_对比度系数_3D不限_20180928\microscope.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPA491.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPA492.tmp" with contents
+[
+opengl32.lib pci2003.lib PCI8620_32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/AFM_USB_1倍速100-400.pdb" /debug /machine:I386 /out:"Release/AFM_USB_1倍速100-400.exe" 
+".\Release\adinit.obj"
+".\Release\Atomforce.obj"
+".\Release\BCAdjust.obj"
+".\Release\ChildFrm.obj"
+".\Release\Dibapi.obj"
+".\Release\MainFrm.obj"
+".\Release\Measure.obj"
+".\Release\microscope.obj"
+".\Release\microscopeDoc.obj"
+".\Release\microscopeView.obj"
+".\Release\Myfile.obj"
+".\Release\RectTrackerEx.obj"
+".\Release\Roughness.obj"
+".\Release\Show3d.obj"
+".\Release\Singlescanner.obj"
+".\Release\SizeDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\microscope.res"
+".\easyusb_card_dll.lib"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPA492.tmp"
+<h3>Output Window</h3>
+Compiling...
+microscope.cpp
+======== Welcome to use our art company's products!
+======== Automatically linking with PCI8620_32.dll...
+======== Successfully linked with PCI8620_32.dll
+Linking...
+
+
+
+<h3>Results</h3>
+AFM_USB_1倍速100-400.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

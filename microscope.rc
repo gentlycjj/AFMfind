@@ -1,0 +1,931 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\microscope.ico"
+IDR_MICROSTYPE          ICON    DISCARDABLE     "res\\microscopeDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_MEASURE
+    SEPARATOR
+    BUTTON      ID_ROUGHNESS
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      IDC_SETCOLOR
+    SEPARATOR
+    BUTTON      IDC_PSEUDOCOLOR
+    BUTTON      IDC_BCADJUST
+    BUTTON      ID_BLUR
+    BUTTON      ID_3D
+    BUTTON      ID_SIZE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "系统测量(&M)"
+    BEGIN
+        MENUITEM "图像扫描(&S)",                ID_MEASURE
+        MENUITEM "原子力曲线(&F)",              ID_ATOMFORCE
+        MENUITEM SEPARATOR
+        MENUITEM "粗糙度统计(&R)",              ID_ROUGHNESS
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "程序信息(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MICROSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "系统测量(&M)"
+    BEGIN
+        MENUITEM "图像扫描(&S)",                ID_MEASURE
+        MENUITEM "原子力曲线(&F)",              ID_ATOMFORCE
+        MENUITEM SEPARATOR
+        MENUITEM "粗糙度统计(&R)",              ID_ROUGHNESS
+    END
+    POPUP "图像处理(&P)"
+    BEGIN
+        MENUITEM "颜色设置(&C)",                IDC_SETCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "亮度/对比度调节(&B)",         IDC_BCADJUST
+        MENUITEM "图像平滑(&M)",                ID_BLUR
+        MENUITEM "图像伪彩色处理(&P)",          IDC_PSEUDOCOLOR
+        MENUITEM "图像立体化(&S)",              ID_3D
+        MENUITEM "标注尺寸(&L)",                ID_SIZE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "程序信息(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_DIALOG MENU DISCARDABLE 
+BEGIN
+    POPUP "弹出菜单"
+    BEGIN
+        MENUITEM "捕获当前图像     Ctrl+I ",    ID_POPUP_CAPTUREIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "改变坐标颜色     Ctrl+D",     ID_POPUP_LINE
+        MENUITEM "改变背景颜色     Ctrl+B",     ID_POPUP_BACKGROUND
+        MENUITEM "改变图像颜色     Ctrl+F",     ID_POPUP_FRONT
+        MENUITEM SEPARATOR
+        POPUP "图像对比度调节"
+        BEGIN
+            MENUITEM "对比度增强   Ctrl++",         ID_POPUP_ADDCONTRAST
+            MENUITEM "对比度减弱   Ctrl+-",         ID_POPUP_SUBTRACTCONTRAST
+
+            MENUITEM SEPARATOR
+            MENUITEM "对比度复原   Ctrl+R",         ID_POPUP_RESETCONTRAST
+        END
+        POPUP "图像亮度调节"
+        BEGIN
+            MENUITEM "亮度增强   Alt++",            ID_POPUP_ADDBRIGHTNESS
+            MENUITEM "亮度减弱   Alt+-",            ID_POPUP_SUBTRACTBRIGHTNESS
+
+            MENUITEM SEPARATOR
+            MENUITEM "亮度复原   Alt+R",            ID_POPUP_RESETBRIGHTNESS
+        END
+        MENUITEM SEPARATOR
+        POPUP "图像立体度调节"
+        BEGIN
+            MENUITEM "立体度增强   Ctrl+Alt++",     ID_POPUP_ADDSOLID
+            MENUITEM "立体度减弱   Ctrl+Alt+-",     ID_POPUP_SUBTRACTSOLID
+            MENUITEM SEPARATOR
+            MENUITEM "立体度复原   Ctrl+Alt+R",     ID_POPUP_RESETSOLID
+        END
+        MENUITEM SEPARATOR
+        POPUP "图像位置调节"
+        BEGIN
+            MENUITEM "图像整体上移   Shift++",      ID_POPUP_IMAGEUPPER
+            MENUITEM "图像整体下移   Shift+-",      ID_POPUP_IMAGELOWER
+            MENUITEM SEPARATOR
+            MENUITEM "图像位置复原   Shift+R",      ID_POPUP_IMAGERESET
+        END
+        MENUITEM SEPARATOR
+        POPUP "标尺设定"
+        BEGIN
+            MENUITEM "加标尺    shift+A",           ID_POPUP_ADDAXIS
+            MENUITEM "去标尺    shift-A",           ID_POPUP_SUBTRACTAXIS
+        END
+        POPUP "旋转"
+        BEGIN
+            MENUITEM "X向旋转",                     ID_POPUP_XROTATE
+            MENUITEM "Y向旋转",                     ID_POPUP_YROTATE
+            MENUITEM "任意向旋转",                  ID_POPUP_RANDOMROTATE
+            MENUITEM "停止旋转",                    ID_POPUP_STOPTOTATE
+        END
+        MENUITEM "关闭三维立体图   Ctrl+C",     ID_POPUP_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+IDR_POPUP_DIALOG ACCELERATORS DISCARDABLE 
+BEGIN
+    187,            ID_POPUP_ADDCONTRAST,   VIRTKEY, CONTROL, NOINVERT
+    187,            ID_POPUP_ADDBRIGHTNESS, VIRTKEY, ALT, NOINVERT
+    187,            ID_POPUP_ADDSOLID,      VIRTKEY, CONTROL, ALT, NOINVERT
+    187,            ID_POPUP_IMAGEUPPER,    VIRTKEY, SHIFT, NOINVERT
+    189,            ID_POPUP_SUBTRACTCONTRAST, VIRTKEY, CONTROL, NOINVERT
+    189,            ID_POPUP_SUBTRACTBRIGHTNESS, VIRTKEY, ALT, NOINVERT
+    189,            ID_POPUP_SUBTRACTSOLID, VIRTKEY, CONTROL, ALT, NOINVERT
+    189,            ID_POPUP_IMAGELOWER,    VIRTKEY, SHIFT, NOINVERT
+    "B",            ID_POPUP_BACKGROUND,    VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_POPUP_CLOSE,         VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_POPUP_LINE,          VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_POPUP_FRONT,         VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_POPUP_CAPTUREIMAGE,  VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_POPUP_RESETCONTRAST, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_POPUP_RESETBRIGHTNESS, VIRTKEY, ALT, NOINVERT
+    "R",            ID_POPUP_RESETSOLID,    VIRTKEY, CONTROL, ALT, NOINVERT
+    "R",            ID_POPUP_IMAGERESET,    VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 238, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "原子力显微镜（AFM） "
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "原子力显微镜（AFM）2018 版",IDC_STATIC,43,10,152,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2025.12",IDC_STATIC,43,54,119,8
+    DEFPUSHBUTTON   "确定",IDOK,181,54,50,14,WS_GROUP
+    LTEXT           "SEK-8502 AFM",IDC_STATIC,43,32,
+                    171,8
+END
+
+IDD_MEASURE DIALOG DISCARDABLE  0, 0, 375, 272
+STYLE DS_MODALFRAME | WS_CAPTION
+CAPTION "原子力显微镜（AFM）"
+FONT 10, "System"
+BEGIN
+    CONTROL         "100×100 ",IDC_RADIOBMPSIZE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,48,19,44,10
+    CONTROL         "400×400 ",IDC_RADIOBMPSIZE2,"Button",
+                    BS_AUTORADIOBUTTON,100,19,43,10
+    CONTROL         "Slider1",IDC_SLIDERTHRESHOLD,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | NOT WS_VISIBLE | 
+                    WS_TABSTOP,166,32,66,10
+    CONTROL         "  2   ～   20",IDC_RADIORANGE,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,169,51,8,
+                    8
+    CONTROL         "400 ～ 4000",IDC_RADIORANGE2,"Button",
+                    BS_AUTORADIOBUTTON,12,62,50,9
+    EDITTEXT        IDC_SMALLRANGEX,181,50,6,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    CONTROL         "Spin3",IDC_SPINRANGESMALLX,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,178,51,
+                    9,6
+    EDITTEXT        IDC_SMALLRANGEY,176,43,6,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    CONTROL         "Spin3",IDC_SPINRANGESMALLY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,176,55,
+                    9,6
+    EDITTEXT        IDC_LARGERANGEX,71,60,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",IDC_SPINRANGELARGEX,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,96,57,9,14
+    EDITTEXT        IDC_LARGERANGEY,112,60,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",IDC_SPINRANGELARGEY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,135,58,9,14
+    CONTROL         "Check",IDC_CHECKPIANZHI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,119,8,8
+    EDITTEXT        IDC_PIANZHIX,112,110,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINPIANZHIX,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,133,108,9,14
+    EDITTEXT        IDC_PIANZHIY,112,125,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINPIANZHIY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,133,123,9,14
+    CONTROL         "Slider1",IDC_SLIDERTIME,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,8,154,
+                    124,14
+    PUSHBUTTON      "开始扫描",IDC_BUTTONSTARTSCAN,157,253,45,14
+    PUSHBUTTON      "捕获图像",IDC_BUTTONBMPCAPTURE,211,253,45,14
+    PUSHBUTTON      "停止扫描",IDC_BUTTONSTOPSCAN,266,253,45,14
+    PUSHBUTTON      "退  出",IDC_BUTTONGOBACK,320,253,45,14
+    PUSHBUTTON      "CANCEL",IDCANCEL,19,3,29,14,NOT WS_VISIBLE
+    GROUPBOX        "扫描时间",IDC_SETTIME,7,142,138,44
+    DEFPUSHBUTTON   "OK",IDOK,0,3,18,14,NOT WS_VISIBLE
+    GROUPBOX        "参数设置",IDC_SETOPTION,4,0,146,270,BS_CENTER
+    GROUPBOX        "扫描范围（纳米nm）",IDC_SETRANGE,7,49,138,48
+    GROUPBOX        "图像设置",IDC_SETBMP,7,8,138,38,WS_GROUP
+    LTEXT           "像素/幅:",IDC_STATICBMPSIZE,12,19,34,8
+    CTEXT           "X",IDC_STATICSMALLRANGEX,0,3,9,8,NOT WS_VISIBLE
+    CTEXT           "Y",IDC_STATICSMALLRANGEY,4,3,9,8,NOT WS_VISIBLE
+    GROUPBOX        "图像显示",IDC_SHOWBMP,159,0,212,218,BS_CENTER
+    LTEXT           "",IDC_SHOWTIME,129,156,14,8
+    LTEXT           "X :",IDC_STATICSHOWX,159,223,10,10
+    LTEXT           "Y :",IDC_STATICSHOWY,210,223,10,10
+    LTEXT           "Z max :",IDC_STATICSHOWZMAX,260,223,26,10
+    LTEXT           "Z min :",IDC_STATICSHOWZMIN,317,223,24,10
+    LTEXT           "",IDC_SHOWX,172,223,19,10
+    LTEXT           "",IDC_SHOWY,223,223,19,10
+    LTEXT           "",IDC_SHOWZMAX,286,223,19,10
+    LTEXT           "",IDC_SHOWZMIN,341,223,19,10
+    CTEXT           "X",IDC_STATICLARGERANGEX,62,62,9,8
+    CTEXT           "Y",IDC_STATICLARGERANGEY,103,62,9,8
+    LTEXT           "",IDC_SHOWXDANWEI,191,223,10,10
+    LTEXT           "",IDC_SHOWYDANWEI,242,223,10,10
+    LTEXT           "",IDC_SHOWZMAXDANWEI,305,223,8,10
+    LTEXT           "",IDC_SHOWZMINDANWEI,363,223,8,10
+    GROUPBOX        "样品偏置（纳米nm）",IDC_PIANZHI,7,100,138,40
+    LTEXT           "X向偏置:",IDC_STATICPIANZHIX,29,112,40,8
+    LTEXT           "0 ～ 4000",IDC_STATICPIANZHIXRANGEX,70,112,34,9
+    LTEXT           "Y向偏置:",IDC_STATICPIANZHIY,29,127,38,8
+    LTEXT           "0 ～ 4000",IDC_STATICPIANZHIXRANGEY,70,127,34,9
+    LTEXT           "亮度阈值：",IDC_STATICLIGHTNESSTHRESHOLD,170,69,43,8,
+                    NOT WS_VISIBLE
+    RTEXT           "",IDC_SHOWTHRESHOLD,183,50,16,9,NOT WS_VISIBLE
+    LTEXT           "Ra :",IDC_STATICSHOWRa,159,239,14,10
+    LTEXT           "",IDC_SHOWRa,175,239,19,10
+    LTEXT           "Ry :",IDC_STATICSHOWRy,210,239,14,10
+    LTEXT           "",IDC_SHOWRy,225,239,19,10
+    LTEXT           "Rz :",IDC_STATICSHOWRz,260,239,14,10
+    LTEXT           "",IDC_SHOWRz,276,239,21,10
+    LTEXT           "",IDC_SHOWRaDANWEI,193,239,10,10
+    LTEXT           "",IDC_SHOWRyDANWEI,247,239,10,10
+    LTEXT           "",IDC_SHOWRzDANWEI,300,239,10,10
+    CONTROL         "鼠标选区",IDC_MOUSESELECT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,79,42,13
+    LTEXT           "",IDC_MOUSERANGEXFROM,77,74,23,8
+    LTEXT           "～",IDC_STATIC,104,74,10,8
+    LTEXT           "",IDC_MOUSERANGEXTO,118,74,24,8
+    LTEXT           "",IDC_MOUSERANGEYFROM,77,87,24,8
+    LTEXT           "～",IDC_STATIC,104,87,10,8
+    LTEXT           "",IDC_MOUSERANGEYTO,118,86,24,8
+    LTEXT           "X:",IDC_STATICX,64,74,10,8
+    LTEXT           "Y:",IDC_STATICY,64,87,10,8
+    EDITTEXT        IDC_SELECTTIMES,56,200,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINSELECTTIMES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,76,199,9,13
+    GROUPBOX        "扫描次数",IDC_SETTIMES,7,188,86,37
+    LTEXT           "平均行扫描时间",IDC_ROWSCANTIMETXT,162,89,57,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "每幅图像扫描时间",IDC_BMPSCANTIMETXT,11,171,68,8
+    LTEXT           "",IDC_ROWSCANTIME,218,88,29,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_BMPSCANTIME,81,171,17,8
+    CONTROL         "扫描次数",IDC_SELECTSCANTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,202,43,8
+    LTEXT           "已完成扫描",IDC_FINISHSCANTIMESTXT1,12,214,41,8
+    LTEXT           "",IDC_FINISHSCANTIMES,57,214,14,8
+    LTEXT           "次",IDC_FINISHSCANTIMESTXT2,72,214,9,8
+    GROUPBOX        "扫描方向选择",IDC_SCANDIRECTION,7,228,138,38
+    CONTROL         "X轴方向",IDC_XDIRECTION,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,245,39,8
+    CONTROL         "Y轴方向",IDC_YDIRECTION,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,12,257,39,8
+    EDITTEXT        IDC_SINGLEXSCANTXT,108,236,29,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPINSINGLEXSCANTXT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,134,238,
+                    9,8
+    EDITTEXT        IDC_SINGLEYSCANTXT,108,252,29,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin2",IDC_SPINSINGLEYSCANTXT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,134,255,
+                    9,8
+    CONTROL         "单行",IDC_SINGLEXSCAN,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,81,237,25,9
+    CONTROL         "单列",IDC_SINGLEYSCAN,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,81,254,25,9
+    CONTROL         "",IDC_CHECKSINGLESCAN,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,72,245,8,8
+    LTEXT           "秒",IDC_BMPSCANTIMEDANWEI,101,171,12,8
+    LTEXT           "毫秒",IDC_ROWSCANTIMEDANWEI,250,89,20,10,NOT WS_VISIBLE
+    LTEXT           "消斜系数 Kx:",IDC_XRATE,12,33,51,8
+    LTEXT           "Ky:",IDC_YRATE,97,33,17,8
+    EDITTEXT        IDC_KX,60,31,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",IDC_SPINKX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_GROUP,89,28,9,14
+    EDITTEXT        IDC_KY,112,31,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",IDC_SPINKY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,134,29,9,14
+    EDITTEXT        IDC_KZ,102,200,26,11,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPINKZ,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,122,198,9,
+                    13
+    GROUPBOX        "对比度系数",IDC_SETTIMES2,97,188,48,37
+END
+
+IDD_BCADJUST DIALOG DISCARDABLE  0, 0, 197, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "亮度/对比度调节"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确  定",IDOK,151,20,39,14
+    PUSHBUTTON      "取  消",IDCANCEL,151,49,39,14
+    GROUPBOX        "亮度调节",IDC_BRIGHTNESS,7,7,131,32
+    GROUPBOX        "对比度调节",IDC_CONTRASTNESS,7,45,131,32
+    CONTROL         "Slider1",IDC_SLIDERBRIGHTNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,13,21,103,11
+    CONTROL         "Slider1",IDC_SLIDERCONTRAST,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,13,58,103,11
+    LTEXT           "+100",IDC_STATICBRIGHTNESS,118,22,16,9
+    LTEXT           "+100",IDC_STATICCONTRAST,118,59,16,9
+END
+
+IDD_SHOW3D DIALOG DISCARDABLE  0, 0, 306, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "三维立体图"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,264,90,13,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,265,113,12,14,NOT WS_VISIBLE
+END
+
+IDD_ATOMFORCE DIALOG DISCARDABLE  0, 0, 371, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "原子力曲线测量 —— 浙大光电"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDERRANGE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,14,48,
+                    101,16
+    CONTROL         "",IDC_BACKGROUNDCOLOR,"Static",SS_BLACKFRAME | 
+                    SS_SUNKEN,77,95,39,9
+    CONTROL         "",IDC_COORDINATECOLOR,"Static",SS_BLACKFRAME | 
+                    SS_SUNKEN,77,114,39,9
+    CONTROL         "",IDC_CURVECOLOR,"Static",SS_BLACKFRAME | SS_SUNKEN,77,
+                    133,39,9
+    CONTROL         "Slider2",IDC_SLIDERTIME,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,34,
+                    177,87,16
+    PUSHBUTTON      "开始测量",IDC_BUTTONSTART,4,217,41,14
+    PUSHBUTTON      "捕获图像",IDC_BUTTONCAPTURE,56,217,41,14
+    PUSHBUTTON      "退  出",IDC_BUTTONGOBACK,108,217,41,14
+    DEFPUSHBUTTON   "OK",IDOK,0,7,28,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,28,7,28,14,NOT WS_VISIBLE
+    GROUPBOX        "原子力曲线",IDC_SHOWCURVE,155,13,212,218,BS_CENTER
+    GROUPBOX        "参数设置",IDC_SETOPTION,4,13,146,194,BS_CENTER
+    GROUPBOX        "测量范围（ 100 ～ 1000  纳米 ）",IDC_SETRANGE,8,30,138,
+                    43
+    GROUPBOX        "颜色设置",IDC_SETCOLOR,9,80,138,71
+    GROUPBOX        "测量时间",IDC_SETTIME,9,158,138,43
+    LTEXT           "背景颜色：",IDC_STATICBACKGROUNDCOLOR,22,95,41,11
+    LTEXT           "坐标颜色：",IDC_STATICCOORDINATECOLOR,22,114,41,11
+    LTEXT           "曲线颜色：",IDC_STATICCURVECOLOR,22,133,41,11
+    CTEXT           "快",IDC_STATICTIMEFASTER,18,180,10,11
+    CTEXT           "慢",IDC_STATICTIMESLOWER,127,180,10,11
+    LTEXT           "",IDC_SHOWRANGE,123,51,18,12
+    CONTROL         "",IDC_CURVEIMAGE,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,161,25,200,200
+END
+
+IDD_ROUGHNESS DIALOG DISCARDABLE  0, 0, 205, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "粗糙度统计"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存信息",IDOK,40,99,49,14
+    PUSHBUTTON      "确  定",IDCANCEL,116,99,49,14
+    LTEXT           "Ra :",IDC_STATICRa,27,27,16,9
+    LTEXT           "",IDC_Ra,46,27,17,9
+    LTEXT           "nm",IDC_Radanwei,67,27,11,9
+    LTEXT           "Ry :",IDC_STATICRy,27,49,16,9
+    LTEXT           "",IDC_Ry,46,49,17,9
+    LTEXT           "nm",IDC_Rydanwei,67,49,11,9
+    LTEXT           "Rz :",IDC_STATICRz,27,71,16,9
+    LTEXT           "",IDC_Rz,46,71,17,9
+    LTEXT           "nm",IDC_Rzdanwei,67,71,11,9
+    GROUPBOX        "粗糙度",IDC_STATICROUGHNESS,10,7,86,87
+    GROUPBOX        "扫描范围",IDC_STATICSCANRANGE,103,7,92,42
+    GROUPBOX        "图像大小",IDC_STATICIMAGESIZE,103,52,92,42
+    LTEXT           "X :",IDC_STATICRANGEX,121,21,16,9
+    LTEXT           "Y :",IDC_STATICRANGEY,121,35,16,9
+    LTEXT           "",IDC_Rangex,137,21,17,9
+    LTEXT           "nm",IDC_Rangexdanwei,159,21,11,9
+    LTEXT           "",IDC_Rangey,137,35,17,9
+    LTEXT           "nm",IDC_Rangeydanwei,159,35,11,9
+    LTEXT           "X :",IDC_STATICIMAGESIZEX,121,66,16,9
+    LTEXT           "Y :",IDC_STATICIMAGESIZEY,121,80,16,9
+    LTEXT           "",IDC_Imagesizex,137,66,17,9
+    LTEXT           "pixel",IDC_Imagesizexdanwei,159,66,18,9
+    LTEXT           "",IDC_Imagesizey,137,80,17,9
+    LTEXT           "pixel",IDC_Imagesizeydanwei,159,80,18,9
+END
+
+IDD_SIZE DIALOG DISCARDABLE  0, 0, 168, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "原始图像信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,90,30,50,14
+    GROUPBOX        "大小",IDC_STATIC,13,7,66,39
+    CONTROL         "100×100",IDC_SMALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,18,48,10
+    CONTROL         "400×400",IDC_BIG,"Button",BS_AUTORADIOBUTTON,21,33,48,
+                    10
+    LTEXT           "扫描范围：",IDC_STATIC,10,60,44,12
+    EDITTEXT        IDC_SCANX,56,56,41,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,84,53,14,20
+    LTEXT           "×",IDC_STATIC,102,60,10,11
+    EDITTEXT        IDC_SCANY,116,56,41,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,145,52,9,20
+END
+
+IDD_SINGLESCANNER DIALOG DISCARDABLE  65336, 0, 232, 267
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,6,6,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,7,7,6,6,NOT WS_VISIBLE
+    CONTROL         "",IDC_BMPFRAME,"Static",SS_BLACKFRAME,14,14,201,201
+    PUSHBUTTON      "图像捕获",IDC_CAPTURE,69,234,40,13
+    PUSHBUTTON      "退    出",IDC_GOBACK,169,234,45,13
+    PUSHBUTTON      "开    始",IDC_GETDATA,14,234,45,13
+    PUSHBUTTON      "停   止",IDC_STOP,119,234,39,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AFM Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "AFM—IIa 2025\0"
+            VALUE "LegalCopyright", "浙大光电版权所有 (C) 2025\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AFM2018.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AFM 应用程序\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_MEASURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 371
+        VERTGUIDE, 12
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_BCADJUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_SHOW3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_ATOMFORCE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_ROUGHNESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 201
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_SINGLESCANNER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "原子力显微镜（AFM）"
+    IDR_MICROSTYPE          "\nImage\nMicros Document\nBitmap Files (*.bmp)\n.bmp\nDibFileType\nDib File Type\nDIB \nDevice-Independent Bitmap\n"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_BMP_TOO_BIG         "BMP图像太大"
+    IDS_CANNOT_LOAD_DIB     "不能打开BMP文件"
+    IDS_CANNOT_SAVE_DIB     "不能存储BMP文件"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AFM2017"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MEASURE              "AFM2014图像扫描\nSTM&&AFM图像扫描"
+    ID_BLUR                 "图像平滑\n图像平滑"
+    ID_3D                   "图像立体化\n图像立体化"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SETCOLOR            "伪彩色处理和图像立体化的颜色设置\n颜色设置"
+    IDC_PSEUDOCOLOR         "图像伪彩色处理\n图像伪彩色处理"
+    IDC_BCADJUST            "亮度/对比度调节\n亮度/对比度调节"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ATOMFORCE            "原子力曲线测量\n原子力曲线测量"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ROUGHNESS            "粗糙度统计\n粗糙度统计"
+    ID_SIZE                 "标注当前扫描图象的大小 \n 标注尺寸"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
